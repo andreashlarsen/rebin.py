@@ -44,9 +44,11 @@ def rebin(x_vec,option,b,average_type):
 
     input:
     x_vec : vector to rebin
-    option: logarithmically or linearly
-    b (lin): binsize
-    b (log): factor to increase binsize logarithmically
+    option: 
+        'log' : logarithmic rebinning
+        'lin' : linear rebinning
+    b (lin): binsize, integer. E.g. 10
+    b (log): factor to increase binsize logarithmically, float. E.g. 1.04
     average_type: 
         'simple' : simple average, sum(x_i)/N
         'square' : squared average, sqrt(sum(x_i**2))/N
