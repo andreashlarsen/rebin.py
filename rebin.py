@@ -7,6 +7,8 @@ def rebinSAS(q,I,dI,option,b):
     q rebinned with simple average to q_RB
     I rebinned with simple average to I_RB
     dI rebinned with square average (error propagation) to dI_RB
+    option: 'log' or 'lin' for logarithmic or linear rebinning
+    b: binsize (if option = 'lin'), factor to increase binsize logarithmically (if option = 'log')
     """
 
     q_RB = rebin(q,option,b,'simple')
